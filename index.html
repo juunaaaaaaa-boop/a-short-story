@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111111">
+  <title>ZIVANNA — A Little Story</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="grain"></div>
+
+<header class="topbar">
+  <a class="wordmark" href="#" id="homeLink">Z<span>.</span></a>
+
+  <div class="top-meta">
+    <span class="live-dot"></span>
+    A LITTLE DIGITAL STORY
+  </div>
+
+  <button class="menu-button" id="menuButton">
+    CHAPTERS <span>＋</span>
+  </button>
+</header>
+
+<main>
+
+  <!-- HALAMAN PEMBUKA -->
+
+  <section class="hero" id="hero">
+
+    <div class="hero-copy">
+
+      <p class="eyebrow">
+        A STORY IN 24 SMALL CHAPTERS
+      </p>
+
+      <h1>
+        Some people<br>
+        make ordinary<br>
+        <em>days feel different.</em>
+      </h1>
+
+      <p class="hero-description">
+        Sebuah cerita kecil tentang seseorang bernama Zivanna.
+        Bukan tentang hal-hal besar, melainkan detail sederhana
+        yang kadang tertinggal di ingatan.
+      </p>
+
+      <div class="hero-actions">
+
+        <button class="primary-button" id="beginButton">
+          Mulai membaca <span>↗</span>
+        </button>
+
+        <span class="read-time">
+          24 CHAPTERS · INTERACTIVE
+        </span>
+
+      </div>
+
+    </div>
+
+    <!-- ILUSTRASI SVG -->
+
+    <div class="portrait-wrap">
+
+      <div class="portrait-frame">
+
+        <svg class="portrait" viewBox="0 0 440 560"
+          role="img"
+          aria-label="Ilustrasi perempuan berhijab dan berseragam batik">
+
+          <defs>
+
+            <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+              <stop stop-color="#343b35"/>
+              <stop offset="1" stop-color="#171a19"/>
+            </linearGradient>
+
+            <linearGradient id="scarf" x1="0" y1="0" x2="1" y2="1">
+              <stop stop-color="#51434a"/>
+              <stop offset=".48" stop-color="#29272d"/>
+              <stop offset="1" stop-color="#111216"/>
+            </linearGradient>
+
+            <linearGradient id="face" x1="0" y1="0" x2=".8" y2="1">
+              <stop stop-color="#f2c9a8"/>
+              <stop offset="1" stop-color="#c98f70"/>
+            </linearGradient>
+
+            <linearGradient id="shirt" x1="0" y1="0" x2="1" y2="1">
+              <stop stop-color="#71934c"/>
+              <stop offset="1" stop-color="#263f2e"/>
+            </linearGradient>
+
+            <filter id="soft">
+              <feGaussianBlur stdDeviation="18"/>
+            </filter>
+
+          </defs>
+
+          <rect width="440" height="560" fill="url(#bg)"/>
+
+          <circle cx="350" cy="95" r="88"
+            fill="#68744a"
+            opacity=".25"
+            filter="url(#soft)"/>
+
+          <path d="M0 420 Q110 365 210 420 T440 410 V560 H0Z"
+            fill="#202824"/>
+
+          <!-- BAJU -->
+
+          <path d="M80 560 Q75 430 125 385 Q165 350 220 350 Q290 350 330 395 Q375 455 380 560Z"
+            fill="url(#shirt)"/>
+
+          <!-- MOTIF BATIK -->
+
+          <g fill="none" stroke="#b7c48b" stroke-width="3" opacity=".72">
+
+            <path d="M90 450q25-30 50 0t50 0m-95 55q25-30 50 0t50 0m130-70q25-30 50 0t50 0m-70 70q25-30 50 0t50 0"/>
+
+            <path d="M120 420l12 15-12 15-12-15zM290 430l12 15-12 15-12-15zM220 490l12 15-12 15-12-15z"/>
+
+          </g>
+
+          <!-- HIJAB -->
+
+          <path d="M125 190 Q112 74 220 55 Q340 54 355 185 L370 370 Q310 430 220 430 Q115 420 75 355Z"
+            fill="url(#scarf)"/>
+
+          <!-- WAJAH -->
+
+          <path d="M155 145 Q170 90 238 94 Q302 96 320 160 Q330 245 290 303 Q260 345 211 337 Q164 325 143 265 Q126 205 155 145Z"
+            fill="url(#face)"/>
+
+          <path d="M145 190 Q140 100 225 80 Q306 80 331 163 Q300 132 266 125 Q214 112 175 154Z"
+            fill="#453b42"/>
+
+          <!-- SISI HIJAB -->
+
+          <path d="M153 210 Q132 260 166 328 Q193 363 225 370 Q172 375 131 338 Q100 293 112 210Z"
+            fill="#17181d"/>
+
+          <path d="M311 210 Q340 260 305 340 Q280 370 238 376 Q321 375 351 325 Q370 260 342 190Z"
+            fill="#14151a"/>
+
+          <!-- MATA DAN ALIS -->
+
+          <g stroke="#67483e" stroke-width="4" stroke-linecap="round" fill="none">
+
+            <path d="M174 218q22-12 42 0M248 216q22-12 42 0"/>
+
+            <path d="M177 238q18 12 34 0M252 237q18 12 34 0"/>
+
+          </g>
+
+          <g fill="#382b28">
+            <ellipse cx="194" cy="237" rx="5" ry="7"/>
+            <ellipse cx="269" cy="236" rx="5" ry="7"/>
+          </g>
+
+          <!-- HIDUNG -->
+
+          <path d="M230 241q-8 28 0 34"
+            stroke="#b77e64"
+            stroke-width="3"
+            fill="none"
+            stroke-linecap="round"/>
+
+          <!-- SENYUM -->
+
+          <path d="M205 292q25 17 51-1"
+            stroke="#a95f61"
+            stroke-width="4"
+            fill="none"
+            stroke-linecap="round"/>
+
+          <!-- KAIN HIJAB BAGIAN DEPAN -->
+
+          <path d="M122 355 Q195 410 290 356 Q318 388 350 410 Q310 475 240 490 Q160 465 92 410Z"
+            fill="#17181e"/>
+
+          <path d="M142 385 Q220 435 305 380"
+            stroke="#51434a"
+            stroke-width="12"
+            fill="none"
+            opacity=".8"/>
+
+          <g fill="#d6bd8a" opacity=".8">
+            <circle cx="130" cy="454" r="5"/>
+            <circle cx="330" cy="475" r="5"/>
+            <circle cx="220" cy="520" r="5"/>
+          </g>
+
+        </svg>
+
+        <div class="portrait-label">
+          <span>01 / THE INTRODUCTION</span>
+          <span>AN ILLUSTRATED IMPRESSION</span>
+        </div>
+
+      </div>
+
+      <div class="portrait-note">
+        not a photograph<br>
+        <em>drawn with code</em>
+      </div>
+
+    </div>
+
+    <div class="hero-index">01 — 24</div>
+
+  </section>
+
+
+  <!-- HALAMAN CERITA -->
+
+  <section class="chapter-shell hidden" id="reader">
+
+    <aside class="chapter-sidebar" id="chapterSidebar">
+
+      <div class="sidebar-heading">
+        <span>CONTENTS</span>
+        <button id="closeMenu">×</button>
+      </div>
+
+      <nav id="chapterList"></nav>
+
+      <div class="sidebar-foot">
+        A SMALL STORY<br>
+        MADE WITH CARE
+      </div>
+
+    </aside>
+
+
+    <article class="chapter-content">
+
+      <div class="chapter-topline">
+        <span id="chapterNumber">CHAPTER 01</span>
+        <span id="chapterCategory">THE BEGINNING</span>
+      </div>
+
+      <div class="progress-track">
+        <span id="progressBar"></span>
+      </div>
+
+      <p class="chapter-kicker" id="chapterKicker"></p>
+
+      <h2 id="chapterTitle"></h2>
+
+      <div class="chapter-body" id="chapterBody"></div>
+
+
+      <!-- MINI GAME -->
+
+      <section class="game-panel" id="gamePanel">
+
+        <div class="game-heading">
+          <span>✳ A SMALL PAUSE</span>
+          <span id="gameType">MINI INTERACTION</span>
+        </div>
+
+        <h3 id="gameTitle"></h3>
+
+        <p id="gamePrompt"></p>
+
+        <div id="gameArea"></div>
+
+        <p class="game-feedback" id="gameFeedback"></p>
+
+      </section>
+
+
+      <!-- NAVIGASI -->
+
+      <div class="chapter-navigation">
+
+        <button class="text-button" id="prevButton">
+          ← Sebelumnya
+        </button>
+
+        <span id="pageCount">01 / 24</span>
+
+        <button class="primary-button small" id="nextButton">
+          Berikutnya <span>→</span>
+        </button>
+
+      </div>
+
+    </article>
+
+  </section>
+
+</main>
+
+
+<footer class="footer">
+  <span>ZIVANNA.</span>
+  <span>A LITTLE STORY, NOT THE WHOLE STORY.</span>
+  <span>MADE BY JUUNA</span>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+              </html>
